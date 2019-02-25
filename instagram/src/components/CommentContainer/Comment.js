@@ -8,7 +8,7 @@ const Comment = props =>{
 
         <div className="comment">
         
-        {props.commentArray.text}
+        <p>{props.comment.text}</p>
         
         </div>
     )

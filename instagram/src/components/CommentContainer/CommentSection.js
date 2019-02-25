@@ -6,12 +6,10 @@ const CommentSection = props =>{
     return (
         
         <div className="comment-section">
-        
-        console.log(props.instaComments)
-        
-        {props.instaComments.map((comment, index) =>(
+ 
+        {props.comments.map((comment, index) =>(
 
-            <Comment commentArray = {comment} key = {index} />
+            <Comment comment = {comment} key = {index} />
             
         ))} 
         </div>
