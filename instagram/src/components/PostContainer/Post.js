@@ -1,5 +1,5 @@
 import React from 'react';
-
+//
 const Posts = props =>{
 
     return(
@@ -9,7 +9,7 @@ const Posts = props =>{
                 <h3>{props.arrayOfPosts.username}</h3>
                 <img src= {props.arrayOfPosts.thumbnailUrl} alt=""/>
             </div>
-
+            
             <div className="post-picture">
                 <img src={props.arrayOfPosts.imageUrl} alt="" />
             </div>
