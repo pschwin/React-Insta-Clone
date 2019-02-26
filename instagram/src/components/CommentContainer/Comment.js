@@ -6,11 +6,7 @@ const Comment = props =>{
 
     return(
 
-        <div className="comment">
-        
-        <p>{props.comment.text}</p>
-        
-        </div>
+        <div></div>
     )
 }
 

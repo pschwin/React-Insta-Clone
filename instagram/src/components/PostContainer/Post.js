@@ -7,11 +7,11 @@ const Posts = props =>{
 
         <div className="post-wrapper">
             <div className="user-info">
-                <h3>{props.arrayOfPosts.username}</h3>
-                <img src= {props.arrayOfPosts.thumbnailUrl} alt=""/>
+                <h3>{props.postWhatever.username}</h3>
+                <img src= {props.postWhatever.thumbnailUrl} alt=""/>
             </div>
             <div className="post-picture">
-                <img src={props.arrayOfPosts.imageUrl} alt="" />
+                <img src={props.postWhatever.imageUrl} alt="" />
             </div>
             
         </div>

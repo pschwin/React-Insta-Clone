@@ -7,11 +7,7 @@ const CommentSection = props =>{
         
         <div className="comment-section">
  
-        {props.comments.map((comment, index) =>(
-
-            <Comment comment = {comment} key = {index} />
-            
-        ))} 
+        
         </div>
     )
 }

@@ -14,12 +14,31 @@ class App extends Component {
     }
 
   }
+
+  componentDidMount(){
+
+    this.setState({thePosts: dummyData});
+
+  }
+
+  addComment = (event, postId, text) => {
+
+    event.preventDefault();
+    const newComment ={
+      postId: 'Joe',
+      text: ""
+    }
+
+    this.setState({
+      thePosts: [...this.state.thePosts.comments, newComment]
+    })
+  }
+
+
   render() {
     return (
       <div className="App">
         <PostSection instaPosts={this.state.thePosts}/>
-        <CommentSection instaComments={this.state.thePosts.comments} />
-        console.log(instaComments);
       </div>
     );
   }
